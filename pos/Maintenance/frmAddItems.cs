@@ -45,8 +45,8 @@ namespace pos.Maintenance
                 new SqlParameter("@code", txtCode.Text.Trim()),
                 new SqlParameter("@description", txtDesc.Text.Trim()),
                 new SqlParameter("@dept_id", cmbDepartment.SelectedValue),
-                new SqlParameter("@cost", txtCost.Text.Trim()),
-                new SqlParameter("@srp", txtSrp.Text.Trim()));
+                new SqlParameter("@cost", txtCost.Text.Trim().Replace(",","")),
+                new SqlParameter("@srp", txtSrp.Text.Trim().Replace(",","")));
 
             this.DialogResult = DialogResult.OK;
         }

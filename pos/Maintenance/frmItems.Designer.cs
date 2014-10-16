@@ -40,11 +40,6 @@
             this.lblDesc = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.dgvItems = new System.Windows.Forms.DataGridView();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtFilter = new pos.controls.ucTextBox();
-            this.cmbDepartment = new PMS.controls.ucComboBox();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dept_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.code = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,6 +47,11 @@
             this.department = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.srp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtFilter = new pos.controls.ucTextBox();
+            this.cmbDepartment = new PMS.controls.ucComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
@@ -182,60 +182,6 @@
             this.dgvItems.TabIndex = 0;
             this.dgvItems.TabStop = false;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.dgvItems);
-            this.groupBox1.Location = new System.Drawing.Point(12, 98);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(862, 489);
-            this.groupBox1.TabIndex = 53;
-            this.groupBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 72);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 17);
-            this.label1.TabIndex = 60;
-            this.label1.Text = "Search";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(515, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 17);
-            this.label2.TabIndex = 62;
-            this.label2.Text = "Department";
-            // 
-            // txtFilter
-            // 
-            this.txtFilter.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFilter.ForeColor = System.Drawing.Color.Green;
-            this.txtFilter.HoverForeColor = System.Drawing.Color.Empty;
-            this.txtFilter.Location = new System.Drawing.Point(75, 69);
-            this.txtFilter.Name = "txtFilter";
-            this.txtFilter.Size = new System.Drawing.Size(425, 23);
-            this.txtFilter.TabIndex = 59;
-            this.txtFilter.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtFilter_KeyUp);
-            // 
-            // cmbDepartment
-            // 
-            this.cmbDepartment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbDepartment.ForeColor = System.Drawing.Color.Green;
-            this.cmbDepartment.FormattingEnabled = true;
-            this.cmbDepartment.HoverForeColor = System.Drawing.Color.Empty;
-            this.cmbDepartment.Location = new System.Drawing.Point(603, 69);
-            this.cmbDepartment.Name = "cmbDepartment";
-            this.cmbDepartment.Size = new System.Drawing.Size(271, 24);
-            this.cmbDepartment.TabIndex = 61;
-            this.cmbDepartment.SelectionChangeCommitted += new System.EventHandler(this.cmbDepartment_SelectionChangeCommitted);
-            // 
             // id
             // 
             this.id.DataPropertyName = "id";
@@ -291,6 +237,60 @@
             this.srp.Name = "srp";
             this.srp.ReadOnly = true;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.dgvItems);
+            this.groupBox1.Location = new System.Drawing.Point(12, 98);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(862, 489);
+            this.groupBox1.TabIndex = 53;
+            this.groupBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(16, 72);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 17);
+            this.label1.TabIndex = 60;
+            this.label1.Text = "Search";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(515, 73);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 17);
+            this.label2.TabIndex = 62;
+            this.label2.Text = "Department";
+            // 
+            // txtFilter
+            // 
+            this.txtFilter.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFilter.ForeColor = System.Drawing.Color.Green;
+            this.txtFilter.HoverForeColor = System.Drawing.Color.Empty;
+            this.txtFilter.Location = new System.Drawing.Point(75, 69);
+            this.txtFilter.Name = "txtFilter";
+            this.txtFilter.Size = new System.Drawing.Size(425, 23);
+            this.txtFilter.TabIndex = 59;
+            this.txtFilter.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtFilter_KeyUp);
+            // 
+            // cmbDepartment
+            // 
+            this.cmbDepartment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDepartment.ForeColor = System.Drawing.Color.Green;
+            this.cmbDepartment.FormattingEnabled = true;
+            this.cmbDepartment.HoverForeColor = System.Drawing.Color.Empty;
+            this.cmbDepartment.Location = new System.Drawing.Point(603, 69);
+            this.cmbDepartment.Name = "cmbDepartment";
+            this.cmbDepartment.Size = new System.Drawing.Size(271, 24);
+            this.cmbDepartment.TabIndex = 61;
+            this.cmbDepartment.SelectionChangeCommitted += new System.EventHandler(this.cmbDepartment_SelectionChangeCommitted);
+            // 
             // frmItems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -307,12 +307,14 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmItems";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Item Maintenance";
             this.Load += new System.EventHandler(this.frmItems_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmItems_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

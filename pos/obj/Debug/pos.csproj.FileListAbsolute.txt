@@ -16,3 +16,4 @@ D:\visual studio.dev\pos\pos\obj\Debug\pos.pdb
 D:\visual studio.dev\pos\pos\obj\Debug\pos.controls.CurrencyTextBox.resources
 D:\visual studio.dev\pos\pos\obj\Debug\PMS.controls.ucComboBox.resources
 D:\visual studio.dev\pos\pos\obj\Debug\PMS.controls.ucMaskedTexbox.resources
+D:\visual studio.dev\pos\pos\obj\Debug\pos.Transactions.frmAddItem.resources

@@ -81,5 +81,10 @@ namespace pos.Maintenance
             bindGridView();
         }
 
+        private void frmItems_KeyDown(object sender, KeyEventArgs e)
+        {
+            btnExit.PerformClick();
+        }
+
     }
 }
